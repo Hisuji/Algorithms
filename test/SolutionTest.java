@@ -1,5 +1,3 @@
-package kr.co.programmers;
-
 import junit.framework.TestCase;
 
 public class SolutionTest extends TestCase {
@@ -10,7 +8,7 @@ public class SolutionTest extends TestCase {
 
     public void testSolution() {
         solution = new Solution();
-        assertEquals(solution.solution(falsyLengthArr), 2.5);
+        assertEquals(solution.solution(trulyArr), 2.5);
 
     }
 

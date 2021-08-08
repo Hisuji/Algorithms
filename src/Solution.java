@@ -1,5 +1,3 @@
-package kr.co.programmers;
-
 public class Solution {
     public double solution(int[] arr) throws IllegalArgumentException{
         Solution solution = new Solution();
