@@ -1,8 +1,8 @@
-import junit.framework.TestCase;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class SolutionTest extends TestCase {
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class SolutionTest {
     Solution solution;
 
     int[] trulyArr = {1, 2, 3, 4};
