@@ -21,14 +21,10 @@ public class RepeatWordSolution {
 
     // 단어리턴
     public String writeWord(int n) {
-        Character[] word = {'수', '박'}; // 홀 - 짝
+        String word = "맛있는수박을먹자";
         String result = "";
         for (int i = 1; i <= n; i++) {
-            if (i % 2 == 0) {
-                result += word[1];
-            } else {
-                result += word[0];
-            }
+            // 변환 생각해보기...
         }
 
         return result;
