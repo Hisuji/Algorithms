@@ -7,3 +7,4 @@
   - [평균구하기](src/Solution.java)
   - [핸드폰번호가리기](src/PhoneMaskingSolution.java)
   - [수박수박수박수박수박수?](src/RepeatWordSolution.java)
+  - [문자열을 정수로 바꾸기](src/TransitionSolution.java)

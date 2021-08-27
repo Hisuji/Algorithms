@@ -12,11 +12,7 @@ public class RepeatWordSolution {
 
     // 제한 조건 : n 길이는 10,000이하인 자연수
     public boolean checkNumberLength(int n) {
-        if (n <= 10000) {
-            return true;
-        } else {
-            return false;
-        }
+        return n <= 10000;
     }
 
     // 단어리턴

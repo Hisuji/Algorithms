@@ -11,16 +11,12 @@ public class PhoneMaskingSolution {
 
     // 제한조건 : 길이 4이상, 20이하인 문자열
     public boolean checkPhoneNumberLength(String phone_number) {
-        if(phone_number.length() >= 4 && phone_number.length() <= 20) {
-            return true;
-        }else {
-            return false;
-        }
+        return phone_number.length() >= 4 && phone_number.length() <= 20;
     }
 
     // *로 마스킹하는 함수
     public String replacePhoneNumber(String phone_number) {
-        String noChangeNumber = phone_number.substring(phone_number.length() - 4, phone_number.length());
+        String noChangeNumber = phone_number.substring(phone_number.length() - 4);
         String changeNumber = phone_number.substring(0, phone_number.length() - 4);
         String maskingNumber = changeNumber.replaceAll("[0-9]", "*");
         String result = maskingNumber.concat(noChangeNumber);

@@ -15,10 +15,7 @@ public class Solution {
     }
 
     public boolean checkLength(int[] arr) {
-        boolean result = false;
-        if (arr.length >= 1 && arr.length <= 100) {
-            result = true;
-        }
+        boolean result = arr.length >= 1 && arr.length <= 100;
         return result;
     }
 
