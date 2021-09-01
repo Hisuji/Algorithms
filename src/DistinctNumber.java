@@ -1,9 +1,5 @@
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
+import java.util.Stack;
 
 public class DistinctNumber {
     // 숫자 배열에서 중복되는 숫자는 전부 제거하고 출력, 출력 순서는 배열 순서 그대로 유지
@@ -16,17 +12,23 @@ public class DistinctNumber {
 
     public int[] distinct(int[] arr) {
         int[] answer = {};
+        Stack<Integer> stack = new Stack<>();
 
-        List<Integer> inputArr = new ArrayList<>();
         for (int i = 0; i < arr.length; i++) {
-            if ((i <= arr.length - 2)
-                    && (arr[i] != arr[i + 1])) {
-                inputArr.add(arr[i]);
-            } else if (i == arr.length - 1) {
-                inputArr.add(arr[i]);
+            if (i == 0) {
+                stack.push(arr[0]);
+            } else {
+                if (stack.peek() != arr[i]) {
+                    stack.push(arr[i]);
+                }
             }
+
         }
-        answer = inputArr.stream().mapToInt(i -> i).toArray();
+
+        answer = new int[stack.size()];
+        for (int i = stack.size() - 1; i >= 0; i--) {
+            answer[i] = stack.pop();
+        }
 
         return answer;
     }
