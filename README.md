@@ -9,3 +9,4 @@
   - [수박수박수박수박수박수?](src/RepeatWordSolution.java)
   - [문자열을 정수로 바꾸기](src/TransitionSolution.java)
   - [같은 숫자는 싫어](src/DistinctNumber.java) :  정확성: 71.9 / 효율성: 28.1
+  - [이상한 문자 만들기](src/LetterCase.java)
