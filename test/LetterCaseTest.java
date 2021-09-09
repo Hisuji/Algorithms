@@ -7,16 +7,9 @@ import static org.junit.jupiter.api.Assertions.*;
 class LetterCaseTest {
     LetterCase letterCase = new LetterCase();
     @Test
-    void splitWord() {
-        String testWord = "hello world ";
-        assertEquals("[hello, world]", Arrays.toString(letterCase.splitWord(testWord)));
+    void solutionTest() {
+        String testWord = "try hello world";
+        assertEquals("TrY HeLlO WoRlD", letterCase.solution(testWord));
     }
 
-    @Test
-    void divideLetterCase() {
-    }
-
-    @Test
-    void checkBlank() {
-    }
 }
