@@ -11,3 +11,4 @@
   - [같은 숫자는 싫어](src/DistinctNumber.java) :  정확성: 71.9 / 효율성: 28.1
   - [이상한 문자 만들기](src/LetterCase.java)
   - [문자열 내 p와 y의 개수](src/Comparison.java)
+  - [문자열 자르기](src/MiddleLetter.java)
