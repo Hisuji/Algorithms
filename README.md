@@ -12,3 +12,4 @@
   - [이상한 문자 만들기](src/LetterCase.java)
   - [문자열 내 p와 y의 개수](src/Comparison.java)
   - [문자열 자르기](src/MiddleLetter.java)
+  - [제일 작은 수 제거하기](src/SmallNumber.java)
