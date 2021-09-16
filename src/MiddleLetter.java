@@ -1,21 +1,14 @@
 public class MiddleLetter {
     public String solution(String s) {
-        String answer = "";
-        // substring( x, y)
-        // x == 가운데 글자
-        // y == 홀/짝에 따라 가여올 글자의 수
-        int wordLength = s.length();
-        int standardNum = 2;
-        int startIndex = (wordLength / standardNum);
-        int endIndex = 0;
-        if (wordLength % 2 == 0) {
-            startIndex = startIndex - 1;
-            endIndex = startIndex + 2;
-        } else {
-            endIndex = startIndex + 1;
-        }
+        // substring(int startIndex, int endIndex)
+        // startIndex 포함 & endIdnex 미포함
+        // startIndex 주어진 s의 가운데
+        // endIndex 홀수일 때는 1, 짝수일 때는 2
+        // index 0 부터 시작
+        // [0] [1] [2] [3] [4]
+        // [0] [1] [2] [3]
+        int startIndex = (s.length() - 1) / 2;
 
-        answer = s.substring(startIndex, endIndex);
-        return answer;
+        return s.substring(startIndex, s.length() % 2 == 0 ? startIndex + 2 : startIndex  + 1);
     }
 }
